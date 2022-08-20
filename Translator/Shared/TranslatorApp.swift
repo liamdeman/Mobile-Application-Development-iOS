@@ -11,7 +11,13 @@ import SwiftUI
 struct TranslatorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView{
+                TranslationView()
+                    .tabItem{
+                        Label("Translate", systemImage: "book")
+                    }
+            }
         }
     }
 }
+
