@@ -15,6 +15,14 @@
 		0C52CCC228AFD0C100FBBFF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C52CCAF28AFD0C100FBBFF2 /* Assets.xcassets */; };
 		0C52CCD228B10F4200FBBFF2 /* TranslationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C52CCD128B10F4200FBBFF2 /* TranslationViewModel.swift */; };
 		0C52CCD328B10F4200FBBFF2 /* TranslationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C52CCD128B10F4200FBBFF2 /* TranslationViewModel.swift */; };
+		0C52CCDB28B15A5C00FBBFF2 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C52CCDA28B15A5C00FBBFF2 /* LanguageSelectionView.swift */; };
+		0C52CCDC28B15A5C00FBBFF2 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C52CCDA28B15A5C00FBBFF2 /* LanguageSelectionView.swift */; };
+		0C52CCDF28B15F4200FBBFF2 /* LanguageSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C52CCDE28B15F4200FBBFF2 /* LanguageSelectionViewModel.swift */; };
+		0C52CCE028B15F4200FBBFF2 /* LanguageSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C52CCDE28B15F4200FBBFF2 /* LanguageSelectionViewModel.swift */; };
+		0C52CCE328B1621E00FBBFF2 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C52CCE228B1621E00FBBFF2 /* Language.swift */; };
+		0C52CCE428B1621E00FBBFF2 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C52CCE228B1621E00FBBFF2 /* Language.swift */; };
+		0C52CCFD28B29A0400FBBFF2 /* Languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C52CCFC28B29A0400FBBFF2 /* Languages.json */; };
+		0C52CCFE28B29A0400FBBFF2 /* Languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C52CCFC28B29A0400FBBFF2 /* Languages.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +33,10 @@
 		0C52CCBA28AFD0C100FBBFF2 /* Translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C52CCBC28AFD0C100FBBFF2 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		0C52CCD128B10F4200FBBFF2 /* TranslationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationViewModel.swift; sourceTree = "<group>"; };
+		0C52CCDA28B15A5C00FBBFF2 /* LanguageSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectionView.swift; sourceTree = "<group>"; };
+		0C52CCDE28B15F4200FBBFF2 /* LanguageSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectionViewModel.swift; sourceTree = "<group>"; };
+		0C52CCE228B1621E00FBBFF2 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		0C52CCFC28B29A0400FBBFF2 /* Languages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Languages.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +60,8 @@
 		0C52CCA728AFD0C000FBBFF2 = {
 			isa = PBXGroup;
 			children = (
+				0C52CCE928B2734B00FBBFF2 /* Assets */,
+				0C52CCE128B1620600FBBFF2 /* Models */,
 				0C52CCD028B10F0C00FBBFF2 /* ViewModels */,
 				0C52CCCE28B10E3800FBBFF2 /* Views */,
 				0C52CCAC28AFD0C000FBBFF2 /* Shared */,
@@ -86,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				0C52CCAE28AFD0C000FBBFF2 /* TranslationView.swift */,
+				0C52CCDA28B15A5C00FBBFF2 /* LanguageSelectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -94,8 +109,25 @@
 			isa = PBXGroup;
 			children = (
 				0C52CCD128B10F4200FBBFF2 /* TranslationViewModel.swift */,
+				0C52CCDE28B15F4200FBBFF2 /* LanguageSelectionViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0C52CCE128B1620600FBBFF2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C52CCE228B1621E00FBBFF2 /* Language.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0C52CCE928B2734B00FBBFF2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0C52CCFC28B29A0400FBBFF2 /* Languages.json */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +174,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					Languages,
+				);
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
@@ -178,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C52CCC128AFD0C100FBBFF2 /* Assets.xcassets in Resources */,
+				0C52CCFD28B29A0400FBBFF2 /* Languages.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C52CCC228AFD0C100FBBFF2 /* Assets.xcassets in Resources */,
+				0C52CCFE28B29A0400FBBFF2 /* Languages.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +236,9 @@
 				0C52CCD228B10F4200FBBFF2 /* TranslationViewModel.swift in Sources */,
 				0C52CCBF28AFD0C100FBBFF2 /* TranslationView.swift in Sources */,
 				0C52CCBD28AFD0C100FBBFF2 /* TranslatorApp.swift in Sources */,
+				0C52CCE328B1621E00FBBFF2 /* Language.swift in Sources */,
+				0C52CCDF28B15F4200FBBFF2 /* LanguageSelectionViewModel.swift in Sources */,
+				0C52CCDB28B15A5C00FBBFF2 /* LanguageSelectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +249,9 @@
 				0C52CCD328B10F4200FBBFF2 /* TranslationViewModel.swift in Sources */,
 				0C52CCC028AFD0C100FBBFF2 /* TranslationView.swift in Sources */,
 				0C52CCBE28AFD0C100FBBFF2 /* TranslatorApp.swift in Sources */,
+				0C52CCE428B1621E00FBBFF2 /* Language.swift in Sources */,
+				0C52CCE028B15F4200FBBFF2 /* LanguageSelectionViewModel.swift in Sources */,
+				0C52CCDC28B15A5C00FBBFF2 /* LanguageSelectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

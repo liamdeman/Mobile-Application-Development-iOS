@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Shared
-//
-//  Created by Liam Deman on 19/08/2022.
-//
-
 import SwiftUI
 struct TranslationView: View {
     @StateObject private var viewModel = TranslationViewModel();
