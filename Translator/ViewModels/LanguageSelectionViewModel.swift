@@ -4,7 +4,7 @@ import CoreLocation
 
 extension LanguageSelectionView{
     @MainActor class LanguageSelectionViewModel: ObservableObject {
-        private var type: LanguageSelectionType!
+        @Published var type: LanguageSelectionType!
         @Published var selectedLangugae: Language!{
             didSet{
                 if let encoded = try? JSONEncoder().encode(selectedLangugae) {

@@ -19,12 +19,14 @@ struct LanguageSelectionView: View {
                 Text(item.name)
                     
             }
+            .navigationTitle("\(viewModel.type!.rawValue) language")
             .toolbar{
                 HStack{
                     EditButton()
                 }
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
