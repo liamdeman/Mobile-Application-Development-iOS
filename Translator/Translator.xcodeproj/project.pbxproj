@@ -23,6 +23,8 @@
 		0C52CCE428B1621E00FBBFF2 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C52CCE228B1621E00FBBFF2 /* Language.swift */; };
 		0C52CCFD28B29A0400FBBFF2 /* Languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C52CCFC28B29A0400FBBFF2 /* Languages.json */; };
 		0C52CCFE28B29A0400FBBFF2 /* Languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C52CCFC28B29A0400FBBFF2 /* Languages.json */; };
+		0CCB3CB328BFB6BB0080F47A /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB3CB228BFB6BB0080F47A /* Translation.swift */; };
+		0CCB3CB428BFB6BB0080F47A /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB3CB228BFB6BB0080F47A /* Translation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,7 @@
 		0C52CCDE28B15F4200FBBFF2 /* LanguageSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectionViewModel.swift; sourceTree = "<group>"; };
 		0C52CCE228B1621E00FBBFF2 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		0C52CCFC28B29A0400FBBFF2 /* Languages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Languages.json; sourceTree = "<group>"; };
+		0CCB3CB228BFB6BB0080F47A /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				0C52CCE228B1621E00FBBFF2 /* Language.swift */,
+				0CCB3CB228BFB6BB0080F47A /* Translation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -237,6 +241,7 @@
 				0C52CCBF28AFD0C100FBBFF2 /* TranslationView.swift in Sources */,
 				0C52CCBD28AFD0C100FBBFF2 /* TranslatorApp.swift in Sources */,
 				0C52CCE328B1621E00FBBFF2 /* Language.swift in Sources */,
+				0CCB3CB328BFB6BB0080F47A /* Translation.swift in Sources */,
 				0C52CCDF28B15F4200FBBFF2 /* LanguageSelectionViewModel.swift in Sources */,
 				0C52CCDB28B15A5C00FBBFF2 /* LanguageSelectionView.swift in Sources */,
 			);
@@ -250,6 +255,7 @@
 				0C52CCC028AFD0C100FBBFF2 /* TranslationView.swift in Sources */,
 				0C52CCBE28AFD0C100FBBFF2 /* TranslatorApp.swift in Sources */,
 				0C52CCE428B1621E00FBBFF2 /* Language.swift in Sources */,
+				0CCB3CB428BFB6BB0080F47A /* Translation.swift in Sources */,
 				0C52CCE028B15F4200FBBFF2 /* LanguageSelectionViewModel.swift in Sources */,
 				0C52CCDC28B15A5C00FBBFF2 /* LanguageSelectionView.swift in Sources */,
 			);
